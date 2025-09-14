@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduLearn - Online Courses</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+
+  <!-- Navbar -->
+   <header class="bg-white shadow-md sticky top-0 z-50 px-4">
+    <nav class="container flex justify-between items-center py-6  px-4 md:px-11">
+      <a class="flex items-center gap-2" href="index.html"><h1 class="text-[15px] font-semibold text-indigo-600">Bijoy_Edulearn</h1></a>
+      <div class="flex">
+        <ul class="flex hidden md:flex gap-2 items-center text-gray-600 ">
+          <li><a href="#home" class="hover:text-indigo-300 pr-6">Home</a></li>
+          <li><a href="#about" class="hover:text-indigo-300 pr-6">About</a></li>
+          <li><a href="#courses" class="hover:text-indigo-300 pr-6">Course</a></li>
+          <li><a href="#conact" class="hover:text-indigo-300 ">Contact</a></li>
+        </ul>
+        
+    <button id="navBtn" class="md:hidden p-2 rounded hover:bg-gray-500">☰</button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileNav" class="md:hidden hidden border-t ">
+      <div class="px-6 py-4 flex flex-col gap-3">
+        <a href="#home" class="hover:text-indigo-300 pr-6">Home</a>
+        <a href="#about" class="hover:text-indigo-300 pr-6">About</a>
+        <a href="#courses" class="hover:text-indigo-300 pr-6">Courses</a>
+        <a href="#contact" class="hover:text-indigo-300 pr-6">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <script>
+  // Mobile nav toggle
+      document.getElementById('navBtn').addEventListener('click', ()=>{
+      document.getElementById('mobileNav').classList.toggle('hidden');
+      });
+  </script>
+
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white text-center py-20 px-4">
+    <h2 class="text-4xl font-bold mb-4">Learn Anytime, Anywhere</h2>
+    <p class="text-lg mb-6">Access high-quality online courses to boost your skills and career.</p>
+    <a href="#courses" class="bg-white text-indigo-600 px-6 py-3 rounded-full font-semibold shadow-md">Browse Courses</a>
+  </section>
+
+  <!-- Courses Section -->
+  <section id="courses" class="container mx-auto py-16 px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">Popular Courses</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- Course 1 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="img/web.jpeg" alt="Course 1" class="w-full h-[250px]">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Web Development</h3>
+          <p class="text-gray-600 mb-2">Learn HTML, CSS, JavaScript, and build modern websites.</p>
+          <p class="font-bold text-indigo-600 mb-4">Free</p>
+          <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded-lg font-semibold">Enroll Now</a>
+        </div>
+      </div>
+
+      <!-- Course 2 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="img/digital.jpeg" alt="Course 2" class="w-full h-[250px]">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Digital Marketing</h3>
+          <p class="text-gray-600 mb-2">Master SEO, social media, and PPC campaigns.</p>
+          <p class="font-bold text-indigo-600 mb-4">$49.99</p>
+          <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded-lg font-semibold">Enroll Now</a>
+        </div>
+      </div>
+
+      <!-- Course 3 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="img/ghrapich.jpeg" alt="Course 3" class="w-full h-[250px]">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Graphic Design</h3>
+          <p class="text-gray-600 mb-2">Learn Photoshop, Illustrator, and modern design skills.</p>
+          <p class="font-bold text-indigo-600 mb-4">$59.99</p>
+          <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded-lg font-semibold">Enroll Now</a>
+        </div>
+      </div>
+
+      <!-- Course 4 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="img/web.jpeg" alt="Course 1" class="w-full h-[250px]">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Web Development</h3>
+          <p class="text-gray-600 mb-2">Learn HTML, CSS, JavaScript, and build modern websites.</p>
+          <p class="font-bold text-indigo-600 mb-4">Free</p>
+          <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded-lg font-semibold">Enroll Now</a>
+        </div>
+      </div>
+
+      <!-- Course 5 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="img/ghrapich.jpeg" alt="Course 3" class="w-full h-[250px]">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Graphic Design</h3>
+          <p class="text-gray-600 mb-2">Learn Photoshop, Illustrator, and modern design skills.</p>
+          <p class="font-bold text-indigo-600 mb-4">$59.99</p>
+          <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded-lg font-semibold">Enroll Now</a>
+        </div>
+      </div>
+
+      <!-- Course 6 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="img/digital.jpeg" alt="Course 2" class="w-full h-[250px]">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Digital Marketing</h3>
+          <p class="text-gray-600 mb-2">Master SEO, social media, and PPC campaigns.</p>
+          <p class="font-bold text-indigo-600 mb-4">$49.99</p>
+          <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded-lg font-semibold">Enroll Now</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-gray-100 py-16 px-6">
+    <div class="container mx-auto text-center max-w-3xl">
+      <h2 class="text-3xl font-bold mb-6">About EduLearn</h2>
+      <p class="text-gray-700">
+        EduLearn is an online learning platform offering high-quality courses across technology, 
+        business, and creative skills. Our mission is to make education accessible to everyone, 
+        anywhere in the world.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container mx-auto py-16 px-6">
+    <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+    <form class="max-w-xl mx-auto space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full border px-4 py-2 rounded-lg" required>
+      <input type="email" placeholder="Your Email" class="w-full border px-4 py-2 rounded-lg" required>
+      <textarea placeholder="Your Message" class="w-full border px-4 py-2 rounded-lg" rows="5"></textarea>
+      <button type="submit" class="bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-6">
+    <p>© 2025 Bijoy-EduLearn | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
